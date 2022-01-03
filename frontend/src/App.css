@@ -1,0 +1,120 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #6293ee;
+  color: white;
+}
+
+
+.heading{
+  width:fit-content;
+  margin: 20px auto;
+  font-size: 1.2rem;
+}
+
+
+.form_container{
+  border: 1px solid rgb(216, 216, 216);
+  width: 400px;
+  padding: 10px;
+  display:flex;
+  flex-direction: column;
+  margin: 10px auto;
+  margin-bottom: 20px;
+}
+
+.form_container input,.form_container button{
+  width: 90%;
+  margin: 10px;
+  height: 40px;
+}
+
+
+.error_container{
+  width:fit-content;
+  margin: 5px auto;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  color:rgb(255, 24, 24);
+}
+
+
+.error{
+  border: 1px solid red;
+  width:fit-content;
+  margin: 2px auto;
+  position: absolute;
+  right: -100%;
+  padding:6px 8px;
+font-weight: 700;
+background:red;
+color:white;
+transition:0.4s ease-in-out;
+top:0%;
+
+
+}
+
+
+.addclose,.updateclose,.deleteclose{
+  width:fit-content;
+  margin: 2px auto;
+  position: absolute;
+  right: -100%;
+  padding:4px 6px;
+font-weight: 600;
+background:rgb(17, 221, 9);
+color:white;
+transition:0.4s ease-in-out;
+top:0%;
+
+}
+
+.error span,.addclose span,.updateclose span,.deleteclose span{
+  margin-left: 5px;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+}
+
+
+.open{
+  right:0%;
+}
+
+
+.info{
+  color:blue;
+  padding: 3px;
+  border:1px solid blue;
+  font-size: 1.2rem;
+}
+
+.danger{
+  color:rgb(255, 1, 1);
+  padding: 3px;
+  border:1px solid rgb(255, 0, 0);
+  font-size: 1.2rem;
+}
